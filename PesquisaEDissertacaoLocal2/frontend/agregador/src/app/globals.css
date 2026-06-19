@@ -1,0 +1,161 @@
+.markdown {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .markdown h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .markdown h2 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .markdown code {
+    background-color: #f4f4f4;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: monospace;
+  }
+  
+  .markdown pre {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+  }
+
+  .loader {
+    border-width: 4px;
+    border-color: #e0e0e0;
+    border-top-color: #007bff;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .fixed {
+    z-index: 9999;
+  }
+  
+  .alinhamento-texto-explicativo {
+    text-align: justify;
+  }
+
+  .alinhamento-texto-explicativo-bloco {
+    padding: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+  }
+
+  .texto-explicativo-subbloco {    
+    padding: 10px;
+    border-style: solid;
+    background-color: #ffffff70;
+    border-color: #0a53c970;
+    margin-top: 1px;
+    margin-bottom: 5px;
+  }
+
+  .texto-explicativo-titulo {
+    font-weight: 600;
+  }
+  
+  .texto-explicativo-titulo-card {
+    font-weight: 800;
+    font-size: 23px;
+    font-family: 'Roboto';
+  }
+
+  .texto-explicativo-corpo-card {
+    font-weight: 100;
+    font-size: 20px;
+    font-family: 'Roboto';
+  }
+
+  .estilo-bordas-card {
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+  }
+
+  .texto-explicativo-corpo {
+    font-weight: 100;
+    font-size: 20px;
+  }
+
+  .platform-default-bg-color {
+    background-color: #accdffde;
+    border-color: #5194f8de;
+  }
+
+  .platform-default-font-characterist {
+    font-family: 'Roboto';
+  }
+
+  .info-icon {
+    position: relative;
+    top: -50px;
+    left: 50px;
+    font-size: 30px;
+    color: #007BFF;
+  }
+
+/* styles/globals.css */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;  /* Ensure this is high enough */
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: var(--bs-modal-color);
+  pointer-events: auto;
+  background-color: var(--bs-modal-bg);
+  background-color: azure;
+  background-clip: padding-box;
+  border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+  border-radius: var(--bs-modal-border-radius);
+  outline: 0;
+  min-height: 200px;
+  padding: 20px;
+  z-index: 1050; /* Ensure content is above the overlay */
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}

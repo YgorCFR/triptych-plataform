@@ -1,0 +1,6 @@
+node_modules/
+.next/
+.github/
+.husky/
+# out is the static build dir for next.js into which the build command writes the static files for the site to be served from (https://nextjs.org/docs/api-reference/cli#build)
+out/

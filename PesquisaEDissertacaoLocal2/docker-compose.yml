@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  frontend:
+    build: ./frontend/agregador
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+
+  backend:
+    build: ./versaopython
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHON_ENV=production
