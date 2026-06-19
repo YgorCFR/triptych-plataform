@@ -1,0 +1,12 @@
+build:
+  docker:
+    web: frontend/agregador/Dockerfile
+    api: versaopython/Dockerfile
+  release:
+    command:
+     - echo "Deployment completed"
+
+  run:
+    web: npm run start --prefix frontend/agregador
+    api: uvicorn main:app --host 0.0.0.0 --port $PORT --ssl-keyfile /app/certificates/key.pem --ssl-certificate /app/certificates/cert.pem
+
